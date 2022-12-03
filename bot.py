@@ -43,6 +43,3 @@ class Bot(Client):
     async def stop(self, *args):
         await super().stop()
         self.Translation.START_APP_TEXT(__name__).format("Bot stopped.")
-
-app = Bot()
-app.run()
