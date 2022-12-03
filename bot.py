@@ -2,6 +2,7 @@
 
 import logging
 import os
+import sys
 from pyrogram import Client
 from pyrogram.raw.all import layer
 from translation import Translation
@@ -37,7 +38,8 @@ class Bot(Client):
             self.Translation.START_APP_TEXT(__name__).format(
                 f"START_APP_TEXT detected!\n┌ First Name: {self.namebot}\n└ Username: @{self.username}\n——"
             )
-        
+            sys.exit()
+
     async def stop(self, *args):
         await super().stop()
         self.Translation.START_APP_TEXT(__name__).format("Bot stopped.")
