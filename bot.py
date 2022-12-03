@@ -29,11 +29,12 @@ class Bot(Client):
         )
 
     async def start(self):
-        await super().start()
-        me = await self.get_me()
-        self.username = '@' + me.username
+        try:
+            await super().start()
+            usr_bot_me = await self.get_me()
+            self.username = usr_bot_me.username
         print('---------------------------------------------------------------------------------')
-        print(Translation.START_APP_TEXT.format(me.first_name, layer, me.username))
+        print(Translation.START_APP_TEXT.format(self.namebot, layer, self.username))
         print('---------------------------------------------------------------------------------')
 
     async def stop(self, *args):
