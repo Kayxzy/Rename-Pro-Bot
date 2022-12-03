@@ -33,7 +33,7 @@ class Bot(Client):
         me = await self.get_me()
         self.username = '@' + me.username
         print('---------------------------------------------------------------------------------')
-        print(Translation.START_APP_TEXT.format(me.first_name, __version__, layer, me.username))
+        print(Translation.START_APP_TEXT.format(me.first_name, layer, me.username))
         print('---------------------------------------------------------------------------------')
 
     async def stop(self, *args):
