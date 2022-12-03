@@ -2,7 +2,7 @@
 
 import logging
 import os
-from pyrogram import Client, __version__
+from pyrogram import Client
 from pyrogram.raw.all import layer
 from translation import Translation
 
