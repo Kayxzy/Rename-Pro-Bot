@@ -33,15 +33,11 @@ class Bot(Client):
             await super().start()
             usr_bot_me = await self.get_me()
             self.username = usr_bot_me.username
-        print('---------------------------------------------------------------------------------')
         print(Translation.START_APP_TEXT.format(self.namebot, layer, self.username))
-        print('---------------------------------------------------------------------------------')
-
+        
     async def stop(self, *args):
         await super().stop()
-        print('-------------------------')
         print(Translation.STOP_APP_TEXT)
-        print('-------------------------')
 
 app = Bot()
 app.run()
