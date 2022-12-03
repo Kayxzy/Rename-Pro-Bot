@@ -38,7 +38,7 @@ These functions can be done in a single download** 😍
 
 ## 🔮 Easy Way :
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dakshkohli23/Rename-Pro-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Kayxzy/Rename-Pro-Bot)
 
 ## 🔮 In Servers Or VPS:
 
